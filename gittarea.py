@@ -24,7 +24,7 @@ def obtener_notas(estudiante: tuple) -> tuple:
     return estudiante[1]
  
  
-def clasificar_estado(promedio_estudiante: float, nota_min: float = NOTAMIN) -> str:
+def estado(promedio_estudiante: float, nota_min: float = NOTAMIN) -> str:
     evaluar = lambda p: "Aprobado" if p >= nota_min else "Reprobado"
     return evaluar(promedio_estudiante)
 
@@ -37,7 +37,7 @@ def calcular_promedios(lista_estudiantes: tuple) -> tuple:
  
 def genreporte(promedios: tuple) -> tuple:
     return tuple(
-        map(lambda par: (par[0], par[1], clasificar_estado(par[1])), promedios)
+        map(lambda par: (par[0], par[1], estado(par[1])), promedios)
     )
  
  
