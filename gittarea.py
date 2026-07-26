@@ -6,7 +6,7 @@ estudiantes = (
     ("Marta Rios",     (9.5, 9.0, 10.0)),
     ("Pedro Salas",    (4.0, 5.0, 3.5)),
     ("Sofia Vera",     (7.0, 7.5, 8.0)),
-    ("Marco Moreira",  (5.5, 6.0, 5.0)),
+    ("Marco Moreira",  (5.5, 7.0, 5.0)),
 )
  
 NOTAMIN = 7.0
